@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>CambioNow</title>
+</head>
+<body>
+    <main>
+        <div class="group-center">
+            <div class="box-container">
+                <p>Olá ***** seja bem vindo ao conversor de moedas</p>
+            </div>
+
+            <div class="box-container">
+                <p>Conversor de moedas</p>
+                <div class="input-container">
+                    <input type="number" placeholder="Insira um valor númerico" class="currency-value">
+                    <hr>
+                    <select class="currency-select">
+                        <option value="USD">USD</option>
+                        <option value="BRL" selected>BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+                
+                <div class="icon-reversor">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 5H19L15 1M15 9H1L5 13" stroke="#071F1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>    
+
+                <div class="input-container">
+                    <input type="number" placeholder="Insira um valor númerico" class="currency-value">
+                    <hr>
+                    <select class="currency-select">
+                        <option value="USD">USD</option>
+                        <option value="BRL" selected>BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+
+                <div class="grafico-taxa-cambio">
+                    <div class="grafico-container">
+                        <p>Taxa de câmbio (Últimos 7 dias)</p>
+                        <canvas id="cambioChart"></canvas>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/conversor.js"></script>
+<script src="../assets/js/bemVindo.js"></script>
+</html>
